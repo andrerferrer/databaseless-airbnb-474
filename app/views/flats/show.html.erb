@@ -1,0 +1,6 @@
+<%# link_to 'text', 'path' %>
+<%= link_to 'Back', root_path %>
+<%# <a href="/"> Back </a> %>
+
+<h1><%= @flat['name'] %> <small><%= "#{@flat['price']} #{@flat['priceCurrency']}" %></small> </h1>
+<img src="<%= @flat['imageUrl'] %>" alt="">

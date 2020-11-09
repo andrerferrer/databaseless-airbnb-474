@@ -1,0 +1,21 @@
+<h1 class='text-center'>Fake Airbnb</h1>
+
+<div class="cards">
+    <% @flats.each do |flat| %>
+        <%= link_to flat_path( flat['id'] ) do  %>
+            <div class="card">
+                <p class='header'>
+                    <%= flat['name'] %>
+                    <small>
+                        <%= flat['price'] %>
+                        <%= flat['priceCurrency'] %>
+                    </small>
+                </p>
+                <div class="picture">
+                    <%= image_tag flat['imageUrl'] %>
+                </div>
+
+            </div>
+        <% end %>
+    <% end %>
+</div>
